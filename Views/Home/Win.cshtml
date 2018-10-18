@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dojodachi</title>
+    <link rel="stylesheet" href="~/css/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+        <div class="main_box">
+            <p>
+                Fullness: @ViewBag.fullness   Happiness: @ViewBag.happiness   Meals: @ViewBag.meals   Energy: @ViewBag.energy
+            </p>
+            <div>
+                <p>
+                    Congratulations! You Won!
+                </p>
+            </div>
+            <form action="restart" method="post">
+                <input type="submit" value="Restart?">
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
